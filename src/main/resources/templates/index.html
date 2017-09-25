@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>RebelLabs Developer Productivity Report 2017 data app</title>
+
+
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/4.0.0-alpha.6-1/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" th:href="@{/css/main.css}"
+          href="../../static/css/main.css" />
+</head>
+<body>
+<nav class="navbar navbar-light" style="background-color: #5da6ce;">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">RebelLabs Developer Productivity Report 2017 data app</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="starter-template">
+        <div th:each="endPoint : ${endPoints}">
+            <a th:attr="href=${endPoint}" th:text="${endPoint}">
+                endPoint
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript"
+        src="webjars/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript"
+        src="webjars/tether/1.4.0/js/tether.min.js"></script>
+<script type="text/javascript"
+        src="webjars/bootstrap/4.0.0-alpha.6-1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
