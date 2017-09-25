@@ -19,5 +19,5 @@ You will see a list of links, clicking on them you'll see some JSON output like:
 
 If you change the SQL queries, you can do your own analysis on the data. To understand what the queries return, unfortunately, you currently need to read the source code. 
 
-If you're just interested in a raw data, check the [csv file with the raw data](github.com).
+If you're just interested in a raw data, check the [csv file with the raw data](https://raw.githubusercontent.com/shelajev/rebellabs-report-2017-analysis-app/master/src/main/resources/rebellabs-survey-2017-results-20170711-clean.csv).
 
